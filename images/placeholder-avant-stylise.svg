@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Visuel avant — état dégradé schématisé">
+  <defs>
+    <linearGradient id="bgAv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a4148"/>
+      <stop offset="100%" stop-color="#1c2126"/>
+    </linearGradient>
+    <pattern id="hachures" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#5C6770" stroke-width="2" opacity="0.55"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bgAv)"/>
+  <rect width="1200" height="900" fill="url(#hachures)" opacity="0.45"/>
+  <g font-family="Georgia, serif" fill="#F4F1EA" text-anchor="middle">
+    <text x="600" y="430" font-size="80" font-weight="600" letter-spacing="0.05em">AVANT</text>
+    <text x="600" y="490" font-size="22" opacity="0.7" letter-spacing="0.1em">État dégradé — schématisation</text>
+  </g>
+</svg>
