@@ -94,18 +94,42 @@
 
   <main id="main">
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <span class="kicker">Mésanger · Loire-Atlantique · Depuis 2011</span>
-          <h1>Couvreur-charpentier <em>à Mésanger.</em></h1>
+    <!-- HERO — Avant / Après plein cadre -->
+    <section class="hero-compare" aria-label="Couverture Bretaud — couvreur-charpentier à Mésanger">
+      <div class="compare hero-compare__media" data-compare style="--split: 58%;">
+        <div class="compare__layer compare__layer--after" aria-hidden="true">
+          <img src="images/apres-3.png" alt="Toiture en ardoise rejointoyée à neuf et démoussée à Châteaubriant" width="1200" height="900" fetchpriority="high" decoding="async" />
+        </div>
+        <div class="compare__layer compare__layer--before" aria-hidden="true">
+          <img src="images/avant-3.png" alt="Toiture en ardoise moussue aux joints partis avant travaux" width="1200" height="900" decoding="async" />
+        </div>
+        <span class="compare__label compare__label--before" aria-hidden="true">Avant</span>
+        <span class="compare__label compare__label--after" aria-hidden="true">Après</span>
+        <button type="button" class="compare__handle" data-compare-handle role="slider"
+                aria-label="Faire glisser pour comparer une toiture avant et après réfection"
+                aria-valuemin="0" aria-valuemax="100" aria-valuenow="58">
+          <span class="compare__handle-line" aria-hidden="true"></span>
+          <span class="compare__handle-knob" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 6 3 12 9 18"></polyline>
+              <polyline points="15 6 21 12 15 18"></polyline>
+            </svg>
+          </span>
+        </button>
+      </div>
+
+      <div class="hero-compare__scrim" aria-hidden="true"></div>
+
+      <div class="container hero-compare__inner">
+        <div class="hero-compare__panel">
+          <span class="kicker">Couvreur-charpentier · Mésanger · Loire-Atlantique</span>
+          <h1 class="hero-compare__title">Une toiture refaite,<br /><em>ça change tout.</em></h1>
           <p class="hero__sub">
-            Yannick Bretaud et ses trois compagnons refont les toitures du pays d'Ancenis et du castelbriantais : ardoise, tuile, zinc, charpente. Devis détaillé, chantier propre, garantie décennale.
+            Yannick Bretaud et ses trois compagnons redonnent vie aux toitures du pays d'Ancenis et du castelbriantais — ardoise, tuile, zinc, charpente. Glissez le curseur : c'est le même toit.
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="contact.html">Demander un devis <span class="btn__arrow" aria-hidden="true">→</span></a>
-            <a class="btn btn--ghost" href="realisations.html">Voir les chantiers</a>
+            <a class="btn btn--ghost btn--ghost-light" href="realisations.html">Voir les chantiers</a>
           </div>
           <ul class="hero__proofs">
             <li>Devis sous 48 h</li>
@@ -113,14 +137,12 @@
             <li>Garantie décennale</li>
           </ul>
         </div>
-        <div class="hero__visual">
-          <img src="https://images.unsplash.com/photo-1635424709961-f3a150459ad4?w=1000&h=1200&fit=crop&q=80&fm=jpg" alt="Couvreurs au travail sur une toiture en Loire-Atlantique" width="1000" height="1200" decoding="async" fetchpriority="high" />
-          <div class="hero__badge">
-            <span>Disponible</span>
-            <span>Saison 2026 — créneaux ouverts</span>
-          </div>
-        </div>
       </div>
+
+      <span class="hero-compare__hint" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 3 12 9 18"></polyline><polyline points="15 6 21 12 15 18"></polyline></svg>
+        Glissez pour comparer
+      </span>
     </section>
 
     <!-- TRUST BAR -->
